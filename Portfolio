@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-dim": "#d73357",
+              "on-tertiary-fixed": "#00463f",
+              "on-tertiary-container": "#005b51",
+              "outline": "#767575",
+              "surface-container": "#1a1a1a",
+              "primary-fixed-dim": "#5a90ff",
+              "inverse-surface": "#fcf9f8",
+              "on-background": "#ffffff",
+              "on-primary-fixed-variant": "#002966",
+              "primary": "#89acff",
+              "tertiary": "#a0fff0",
+              "on-tertiary-fixed-variant": "#00655b",
+              "surface-bright": "#2c2c2c",
+              "tertiary-dim": "#2de7d2",
+              "secondary-dim": "#ba85fb",
+              "on-secondary-fixed-variant": "#6834a6",
+              "primary-container": "#739eff",
+              "error-container": "#a70138",
+              "surface-variant": "#262626",
+              "on-surface-variant": "#adaaaa",
+              "surface-container-highest": "#262626",
+              "error": "#ff6e84",
+              "on-secondary": "#340064",
+              "surface-container-lowest": "#000000",
+              "secondary-fixed": "#e2c7ff",
+              "secondary-container": "#5e289b",
+              "on-error": "#490013",
+              "tertiary-fixed-dim": "#33e9d5",
+              "surface": "#0e0e0e",
+              "background": "#0e0e0e",
+              "on-primary": "#002b6a",
+              "surface-dim": "#0e0e0e",
+              "on-primary-fixed": "#000000",
+              "secondary-fixed-dim": "#d7b5ff",
+              "on-error-container": "#ffb2b9",
+              "outline-variant": "#484847",
+              "inverse-primary": "#0059cb",
+              "secondary": "#bc87fe",
+              "surface-container-low": "#131313",
+              "surface-container-high": "#20201f",
+              "primary-fixed": "#739eff",
+              "on-secondary-fixed": "#4a0b87",
+              "on-primary-container": "#002053",
+              "on-secondary-container": "#e1c5ff",
+              "tertiary-container": "#4af8e3",
+              "tertiary-fixed": "#4af8e3",
+              "on-surface": "#ffffff",
+              "surface-tint": "#89acff",
+              "on-tertiary": "#00645a",
+              "inverse-on-surface": "#565555",
+              "primary-dim": "#0f6df3"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .tonal-shift-low { background: linear-gradient(180deg, rgba(14,14,14,0.8) 0%, rgba(19,19,19,0.8) 100%); }
+      .text-glow-primary { text-shadow: 0 0 20px rgba(137, 172, 255, 0.4); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-xl shadow-[0_40px_80px_rgba(0,0,0,0.6)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-full mx-auto">
+<div class="font-serif text-2xl font-light tracking-tighter text-slate-100 uppercase">
+                FARHAN KHAN
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-serif italic text-lg tracking-tight text-blue-400 border-b-2 border-blue-400 pb-1 scale-95 duration-200 ease-out" href="#">Work</a>
+<a class="font-serif italic text-lg tracking-tight text-slate-400 hover:text-slate-100 transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">About</a>
+<a class="font-serif italic text-lg tracking-tight text-slate-400 hover:text-slate-100 transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-2 rounded-full font-label uppercase tracking-widest text-xs font-bold hover:shadow-[0_0_20px_rgba(137,172,255,0.4)] transition-all duration-300">
+                Connect
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="px-12 mb-32 max-w-7xl mx-auto">
+<div class="space-y-4">
+<span class="font-label text-secondary tracking-[0.3em] uppercase text-xs opacity-80">Portfolio Selection 2024</span>
+<h1 class="font-headline text-7xl md:text-8xl lg:text-9xl font-light leading-none tracking-tighter">
+                    Selected <i class="font-light italic text-primary-fixed">Artifacts</i>
+</h1>
+<p class="max-w-2xl text-on-surface-variant text-xl leading-relaxed mt-8">
+                    An exploration of digital alchemy, where neural networks meet ethereal aesthetics. A gallery of light, shadow, and mathematical elegance.
+                </p>
+</div>
+</header>
+<!-- Bento Grid Gallery -->
+<section class="px-12 max-w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Feature: Neural Muse Engine -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/10] flex items-end p-12">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract 3D crystalline structure with neon cyan and deep violet light refracting through translucent glass fragments in a dark void" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzJvxiBbK68oc9BhXbPFNFTCd9nl1xTBmb9O3SPDL6wHynqnFgKEmVKWvut10awXiHTN0QnUOVwfDatgpD-jevZE9n6DLsj0VDaR8LRBkTHIFIvN0s145hb6dYx__mBSa8q1jDpBRd2DrXGn9GAE4res2rLFfdEIS935Y-zZoWSIIR8BeRi7zg3FO8ZaJ3_mhs4frojzocJLYZw-wsU9wTRVKYbJKvyzcSmEkuaZArp9OI3RUkO00jk6K2GVzpdSKeNMGIdOH0-eGQ')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80"></div>
+<div class="relative z-10 w-full flex justify-between items-end">
+<div>
+<span class="font-label text-tertiary text-[10px] tracking-[0.2em] uppercase">Generative Systems</span>
+<h2 class="font-headline text-4xl text-white mt-2">Neural Muse Engine</h2>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-4 rounded-full border border-white/10 group-hover:bg-primary group-hover:text-on-primary transition-all duration-500">
+<span class="material-symbols-outlined text-3xl">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Vertical Item: Nocturn Flow -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4] flex flex-col p-8 justify-between">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Fluid organic 3D ribbons of iridescent mercury floating in an obsidian space with soft purple ambient lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5oUAGOYd0EMYxpT-oQgFC1noMQJ-3qMtMQYUT8pvlYh12qJCpRaM4zNOCdkc_DNFZzTEe9r36XdFe8RdnoSd5ADvN0DQLaV5hWhf4aRz-06y5vRNvj24cdk0-NClWYPYNac6TfxT5HTieHSTlwdKuvq-YwBt8AGjqUbCRnctrdAdj8NAgcCws10bUm8RpGPfme_rAELMWndnWMxz8BltVxTni0awtOjnZfyz_QbeZRJ3xBgXnZ9BYiVJwxGXKWIbnfEj-ABZAibla')">
+</div>
+<div class="absolute inset-0 bg-neutral-950/20 group-hover:bg-neutral-950/10 transition-colors"></div>
+<div class="relative z-10">
+<span class="font-label text-secondary text-[10px] tracking-[0.2em] uppercase">Motion Study</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl text-white mb-4">Nocturn Flow</h2>
+<p class="text-on-surface-variant text-sm max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        Dynamic fluid simulations exploring the physics of impossible materials.
+                    </p>
+</div>
+</div>
+<!-- Asymmetric Horizontal: Etheral Core -->
+<div class="md:col-span-5 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square p-8">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:rotate-1" data-alt="Geometric glass spheres suspended in a hazy neon environment with soft focus glows and deep shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxtBYS5S1wqqJ0fnfeLndIEhmDfvREEQQgxONsG6lkKhqq8DujjHHTKy9rOMVQWOGE7i4wGpxRBW0muqBWlILJHjltVu3osuKYJVjbCPf0oGgGHtqTbaKJDWdDUKtJMBU6IjNeMYq4vzyo3gNKN8wpHk3Q_K1sd0XSI684VOYSP8NZytlfK1zrg_fAfS0czmUIhkdFKy3BjgdaYdEsxLWGrj-QJzQ5MqoORdnA5dhBcANRJ6U5CdCg13wfWU6SFCQrHFNk6EfU18b2')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent mix-blend-overlay"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<span class="font-label text-primary text-[10px] tracking-[0.2em] uppercase">Visual Identity</span>
+<h2 class="font-headline text-3xl text-white">Ethereal Core</h2>
+</div>
+</div>
+<!-- Bento Square: Prism Protocol -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9] p-10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Highly detailed 3D glass prism dispersing light into spectral rainbows against a matte black textured background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAEPOxnrI7Y1BKPeDJo77XqZOxW3XhgeWv0Z_Hxo003c2MR7PkDtt-yOICWF3WMdbLlXzX1VzEOfgrkUm0pdd89cI31lBu7LbRR7oRfwJ5W8zZRo0rT6DHGQ3cuv9nIg9S6UYbE98tXJZryeUFahbrKcznvPohGwrXhlZRig6lVYie2kfk68qnVmrt4BML53ZKGmE5YhItFOvdRK8ilB0phGCljM6wPIMRXagXO-1DdhEKRtoopP6aEgnzxl8cBh_sYact1pGKZtLo')">
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] group-hover:backdrop-blur-none transition-all duration-700"></div>
+<div class="relative z-10 h-full flex flex-col justify-center items-center text-center">
+<span class="font-label text-tertiary text-[10px] tracking-[0.4em] uppercase mb-4">The New Standard</span>
+<h2 class="font-headline text-5xl text-white tracking-tighter">Prism Protocol</h2>
+<div class="mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="px-6 py-2 border border-white/20 rounded-full font-label text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition-colors">View Case Study</button>
+</div>
+</div>
+</div>
+<!-- Deep Gallery Item: Obsidian OS -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-low h-[600px] flex items-center px-20">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-[2s] group-hover:scale-105" data-alt="Abstract dark UI visualization with floating glowing lines and geometric wireframes in deep space style" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQyrHioYWfqpnElqOfihcOw--2nnr6FfVstGizJiA6PdvcaDim1WYE8QsGFUTsEJPGjsBSgztNQwYdM9_23YlRiZ1Jm3K6VfiEpCBvDzofheWsVXKj0USHR7htDxsdXxVjf1P06fwn4wnLc4wyLcqblJbfPa9piVw6pe1YtHdD94lgoJdfC-yzARwiRy8atiD_vCfthmF-Y0PAxxHCYUiGSZKmN2tCDDL1scynXvslqyA0aP6eKEoP13g7kHK2QIYEB5qUDJZ99fcs')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/40 to-transparent"></div>
+<div class="relative z-10 max-w-lg">
+<span class="font-label text-secondary text-xs tracking-[0.3em] uppercase block mb-6">Product Design</span>
+<h2 class="font-headline text-6xl text-white leading-tight mb-8">Obsidian <br/><i class="font-light">OS Interface</i></h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+                        A minimalist operating system conceptualized for the next generation of spatial computing. Dark by nature, intuitive by design.
+                    </p>
+<div class="flex items-center space-x-6">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-label text-primary uppercase tracking-widest text-xs">Explore System</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic CTA -->
+<section class="py-40 text-center px-12">
+<div class="max-w-3xl mx-auto space-y-12">
+<h3 class="font-headline text-5xl md:text-6xl text-white leading-tight">
+                    Seeking the next <br/> <i class="text-secondary italic">Digital Horizon?</i>
+</h3>
+<div class="pt-8">
+<a class="inline-flex items-center space-x-4 group" href="#">
+<span class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center border border-white/5 group-hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-white group-hover:text-on-primary">mail</span>
+</span>
+<span class="font-headline text-3xl italic text-on-surface-variant group-hover:text-white transition-colors underline decoration-primary/30 underline-offset-8">Start a conversation</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 border-t border-white/5 bg-neutral-950">
+<div class="flex flex-col items-center justify-center space-y-8 px-8 w-full">
+<div class="flex space-x-12">
+<a class="font-mono uppercase tracking-widest text-[10px] text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-mono uppercase tracking-widest text-[10px] text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Dribbble</a>
+<a class="font-mono uppercase tracking-widest text-[10px] text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+</div>
+<p class="font-mono uppercase tracking-widest text-[10px] text-slate-500">
+                © 2024 FARHAN KHAN. THE NOCTURNAL GALLERY.
+            </p>
+<div class="pt-4">
+<div class="w-1 h-1 bg-purple-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(188,135,254,0.8)]"></div>
+</div>
+</div>
+</footer>
+<!-- Back to top floating indicator (Subtle) -->
+<div class="fixed bottom-12 right-12 z-40 hidden md:block">
+<div class="group cursor-pointer flex flex-col items-center space-y-4">
+<span class="font-label text-[10px] uppercase tracking-[0.4em] rotate-90 mb-8 opacity-40 group-hover:opacity-100 transition-opacity">Scroll</span>
+<div class="w-[1px] h-24 bg-gradient-to-b from-primary/50 to-transparent"></div>
+</div>
+</div>
+</body></html>
